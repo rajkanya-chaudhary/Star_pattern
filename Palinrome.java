@@ -1,22 +1,22 @@
-public class Palindrome_string {
+public class Palinrome {
     public static void main(String[] args) {
         String str = "madam";
-        boolean isPalindrome = true;
+        boolean isPalinrome = true;
         for(int i = 0;i<str.length()/2;i++)
         {
             if(str.charAt(i) != str.charAt(str.length()-1-i))
             {
-                isPalindrome = false;
-                break; 
+                isPalinrome = false;
+                break;
             }
         }
-        if(isPalindrome)
-        {
-            System.out.println("Palindrome String");
+        if(isPalinrome)
+        {  
+            System.out.println("String is Palindrome");
         }
         else
         {
-            System.out.println("Not Palindrome String");
+            System.out.println("String is not Palindrome");
         }
     }
 }
